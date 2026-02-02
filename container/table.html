@@ -35,7 +35,25 @@
                 <td>01644250533</td>
                 <td>
                     <abbr title="Edit"> <button type="button" class="btn btn-success"> <i class="bi bi-pencil-square"></i></button></abbr>
-                    <abbr title="Delete"><button type="button" class="btn btn-danger"> <i class="bi bi-trash-fill"></i></button></abbr>
+                   <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#dlt"> <i class="bi bi-trash-fill"></i></button>
+                    <!-- <section> -->
+                        <!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="dlt" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        Are You sure!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
+                    <!-- </section> -->
                    <abbr title="Info"> <button type="button" class="btn btn-info"><i class="bi bi-info-square-fill"></i></button></abbr>
 
 
