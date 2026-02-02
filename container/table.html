@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <table class="table">
+            <tr class="table-primary">
+                <th>ID</th>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Action</th>
+            </tr>
+            <tr class="table-success">
+                <td>01</td>
+                <td>Tanjil</td>
+                <td class="table-danger">01644250533</td>
+                <td>
+                     <abbr title="Edit"> <button type="button" class="btn btn-success"> <i class="bi bi-pencil-square"></i></button></abbr>
+                    <abbr title="Delete"><button type="button" class="btn btn-danger"> <i class="bi bi-trash-fill"></i></button></abbr>
+                   <abbr title="Info"> <button type="button" class="btn btn-info"><i class="bi bi-info-square-fill"></i></button></abbr>
+
+                </td>
+            </tr>
+            <tr class="table-warning">
+                <td>02</td>
+                <td>Sajib</td>
+                <td>01644250533</td>
+                <td>
+                    <abbr title="Edit"> <button type="button" class="btn btn-success"> <i class="bi bi-pencil-square"></i></button></abbr>
+                    <abbr title="Delete"><button type="button" class="btn btn-danger"> <i class="bi bi-trash-fill"></i></button></abbr>
+                   <abbr title="Info"> <button type="button" class="btn btn-info"><i class="bi bi-info-square-fill"></i></button></abbr>
+
+
+                </td>
+
+            </tr>
+
+            <tr class="table-dark">
+                <td>03</td>
+                <td>Sayem</td>
+                <td>01644250533</td>
+                <td>
+                 <button type="button" class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Edit"> <i class="bi bi-pencil-square"></i></button>
+                    <abbr title="Delete"><button type="button" class="btn btn-danger"> <i class="bi bi-trash-fill"></i></button></abbr>
+                   <abbr title="Info"> <button type="button" class="btn btn-info"><i class="bi bi-info-square-fill"></i></button></abbr>
+
+
+                </td>
+            </tr>
+
+
+        </table>
+    </div>
+
+    <script src="../bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+
+</html>
